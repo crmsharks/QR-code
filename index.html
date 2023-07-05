@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card QR Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Business Card QR Code Generator</h1>
+
+  <div id="form-container">
+    <form id="business-card-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="company-name">Company Name:</label>
+      <input type="text" id="company-name" required>
+
+      <label for="position">Position:</label>
+      <input type="text" id="position" required>
+
+      <label for="phone-number">Phone Number:</label>
+      <input type="tel" id="phone-number" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label for="logo-upload">Upload Logo:</label>
+      <input type="file" id="logo-upload">
+
+      <button type="submit">Generate QR Code</button>
+    </form>
+
+    <div id="card-preview-container" class="hidden">
+      <h2>Business Card Preview</h2>
+      <div id="card-preview"></div>
+      <button id="download-btn">Download</button>
+      <button id="add-to-contacts-btn">Add to Contacts</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
